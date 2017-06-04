@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>TuringRobot</title>
+    <link rel="stylesheet" type="text/css" href="../css/style.css" />
+    <link rel="stylesheet" type="text/css" href="../js/jquery-easyui-1.5.2/themes/default/easyui.css"/>
+    <link rel="stylesheet" type="text/css" href="../js/jquery-easyui-1.5.2/themes/icon.css"/>
+    <script src="../js/jquery-easyui-1.5.2/jquery.min.js"></script>
+    <script src="../js/jquery-easyui-1.5.2/jquery.easyui.min.js"></script>
+    <script src="../js/action.js"></script>
+    <script>
+
+    </script>
+</head>
+<body class="easyui-layout">
+    <div id="north" data-options="region:'north',title:'',split:false">
+        <img id="logo" src="../images/robot.png">You can Talk to ME.
+    </div>
+    <div id="south" data-options="region:'south',title:'',split:false">
+        <div id="message">
+            <table>
+                <tr>
+                    <td>
+                        <input id="msg" class="easyui-textbox" data-options="iconCls:'icon-blank'" />
+                    </td>
+                    <td>
+                        <a id="btn" href="#" class="easyui-linkbutton" data-options="iconCls:'icon-redo'">SEND</a>
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </div>
+    <div id="east" data-options="region:'east',title:'User',split:true">
+        <img id="userlogo" src="../images/user.png" />
+        <div id="userinfo">
+            <h3>JimmyU1</h3>
+            <h4>23岁</h4>
+            <h4>男</h4>
+            <h4>水瓶座</h4>
+        </div>
+    </div>
+    <div id="west" data-options="region:'west',title:'TuringRobot',split:true">
+        <img id="robotlogo" src="../images/crab1.png" />
+        <div id="robotinfo">
+            <h3>小螃蟹</h3>
+            <h4>18岁</h4>
+            <h4>男</h4>
+            <h4>双鱼座</h4>
+        </div>
+    </div>
+    <div id="center" data-options="region:'center',title:'Talk Center'">
+        <div id="content">
+            <p>小螃蟹： You can talk to me.</p>
+        </div>
+    </div>
+</body>
+</html>

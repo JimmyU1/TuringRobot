@@ -1,0 +1,96 @@
+#south{
+    text-align: center;
+    height: 50px;
+}
+
+#north{
+    font-family:"Microsoft YaHei UI";
+    font-size: 40px;
+    line-height: 40px;
+    height: 110px;
+}
+
+#east{
+    width:150px;
+}
+
+#west{
+    width:150px;
+}
+
+#center{
+    padding: 5px;
+    background: #c7edcc;
+}
+
+#logo{
+    height: auto;
+    width: 80px;
+    padding-left: 20px;
+    padding-right: 50px;
+    padding-top: 10px;
+}
+
+#robotlogo{
+    height: 120px;
+    width: auto;
+    padding: 10px;
+}
+
+#robotinfo{
+    text-align: center;
+}
+
+#userlogo{
+    height: 120px;
+    width: auto;
+    padding: 10px;
+}
+
+#userinfo{
+    text-align: center;
+}
+
+#content{
+    width: auto;
+    height:835px;
+}
+
+#contentarea{
+    width: 1700px;
+    height: 830px;
+}
+
+#message{
+    width: auto;
+    padding-left: 150px;
+    padding-top: 5px;
+}
+
+#msg{
+    width:80%;
+}
+
+.infotitle{
+    font-family: "Microsoft YaHei UI";
+    font-size: 10px;
+    color: #0000FF;
+}
+
+.texttitle{
+    font-family: "Microsoft YaHei UI";
+    font-size: 10px;
+    color: #d84f4b;
+}
+
+.info{
+    font-family: "Microsoft YaHei UI";
+    font-size: 14px;
+    color: #0000FF;
+}
+
+.text{
+    font-family: "Microsoft YaHei UI";
+    font-size: 14px;
+    color: #d84f4b;
+}
