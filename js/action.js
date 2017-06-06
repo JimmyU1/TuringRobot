@@ -12,12 +12,16 @@ $(function () {
         }
     });
 
+    function setEmpty(id) {
+        $("#"+id).textbox('setValue','');
+    }
+
     $("#btn").bind('click',function () {
         var message = "";
         message = $("#msg").val();
         addInfo();
         sendMessage(message);
-        $("#msg").val("");
+        setEmpty("msg");
     });
 
     function addInfo(){
@@ -37,7 +41,6 @@ $(function () {
     }
 
     function sendMessage(message) {
-        console.log("ajax info: " + message);
         $.ajax({
             url: "http://www.tuling123.com/openapi/api?key=bbde1f790ee24aed8875a0b83b527668",
             type: "get",
