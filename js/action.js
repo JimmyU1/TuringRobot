@@ -7,7 +7,7 @@ var robot = "小螃蟹";
 var msg = "11";
 $(function () {
     $(document).keydown(function(event){
-        if(event.keyCode==13){
+        if(event.keyCode == 13){
             $("#btn").click();
         }
     });
@@ -17,8 +17,7 @@ $(function () {
     }
 
     $("#btn").bind('click',function () {
-        var message = "";
-        message = $("#msg").val();
+        var message = $("#msg").val();
         addInfo();
         sendMessage(message);
         setEmpty("msg");
@@ -26,19 +25,16 @@ $(function () {
 
     function addInfo(){
         msg = $("#msg").val();
-        var info = "<p class='infotitle'>" + user + "\t"+ new Date() +  "</p>" + "<p class='info'>" + msg + "</p> ";
+        var info = "<p class='info-title'>" + user + "\t"+ new Date() +  "</p>" + "<p class='info'>" + msg + "</p> ";
         $("#content").append(info);
 
     }
 
     function addText(text) {
-        var content = "<p class='texttitle'>" + robot + "\t"+ new Date() + "</p>" + "<p class='text'>" + text + "</p> ";
+        var content = "<p class='text-title'>" + robot + "\t"+ new Date() + "</p>" + "<p class='text'>" + text + "</p> ";
         $("#content").append(content);
     }
 
-    function parseData(data) {
-        return data.text;
-    }
 
     function sendMessage(message) {
         $.ajax({
@@ -56,7 +52,7 @@ $(function () {
             }
         });
     }
-})
+});
 
 
 
